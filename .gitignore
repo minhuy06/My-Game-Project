@@ -1,0 +1,12 @@
+# Bỏ qua các file thực thi và file biên dịch
+*.exe
+*.o
+*.obj
+
+# Bỏ qua thư mục build
+build/
+bin/
+.vscode/
+
+# Bỏ qua file rác hệ điều hành
+.DS_Store
