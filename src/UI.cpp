@@ -98,7 +98,10 @@ void UI::drawFadingPlanet(float x, float y, float radius, Color glowColor, Color
     
     // Vẽ một hình tròn Gradient bằng đúng màu nền để che đi bề mặt
     // Tâm hình tròn này tối đen (bgColor), và mờ dần ra viền (Fade = 0.0f)
-    DrawCircleGradient(shadowX, shadowY, radius * 2.0f, bgColor, Fade(bgColor, 0.0f));
+    Vector2 shadowCenter = {(float)shadowX, (float)shadowY}; 
+
+// Truyền gói Vector2 đó vào hàm
+    DrawCircleGradient(shadowCenter, radius * 2.0f, bgColor, Fade(bgColor, 0.0f));
 }
 
 // Hàm vẽ nút hoàn chỉnh
