@@ -1,5 +1,6 @@
 #pragma once
 #include "UI.h"
+#include "LevelManager.h"
 
 enum GameState{
     MENU_MAIN,
@@ -10,6 +11,7 @@ class Game{
     private:
         GameState currentState;
         UI ui;
+        LevelManager levelManager;
     public:
         Game();
         void init(); //Khởi tạo cửa sổ Raylib
