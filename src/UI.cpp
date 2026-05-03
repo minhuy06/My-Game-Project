@@ -231,7 +231,7 @@ void UI::drawMainMenu(int latestScore){
     // Hàm vẽ tên game chính giữa màn hình
     DrawTextEx(myFont, "HÀNH TRÌNH VƯỢT ẢI", {350.0f, 120.0f}, 100.0f, 3.0f, { 0, 255, 255, 255 });
 
-    // Hàm vẽ khung điểm
+    // Hàm vẽ khung 
     const char* scoreText = TextFormat("Điểm mới nhất: %d%%", latestScore);
     drawEntireButton(1150, 30, 370, 70, scoreText);
 
